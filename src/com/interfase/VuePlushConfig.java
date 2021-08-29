@@ -2,7 +2,6 @@ package com.interfase;
 
 import com.entity.VuePlushEntity;
 import jdk.jfr.Description;
-
 import java.lang.annotation.*;
 
 @Target(ElementType.FIELD)
