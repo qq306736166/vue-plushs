@@ -2,12 +2,16 @@ package com.interfase;
 
 import com.entity.VuePlushEntity;
 import jdk.jfr.Description;
-import java.lang.annotation.*;
 
-@Target(ElementType.TYPE)
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @Description(value = "vueconfig")
-public @interface VuePlushConfig {
+public @interface VuePlushConfigs {
 
     VuePlushEntity vue = new VuePlushEntity();
 

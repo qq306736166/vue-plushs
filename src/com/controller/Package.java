@@ -11,8 +11,6 @@ import java.util.Map;
 
 public class Package extends PackJsonFile {
 
-
-    @VuePlushConfig(project_name = "vue-plush",project_author = "dismans",project_version = "v1.0.0",project_description = "vue",project_debug = true)
     private String ProjectName;
     private String Project_Version;
     private String Project_Author;
@@ -83,6 +81,8 @@ public class Package extends PackJsonFile {
         object.put("engines", VuePlushPro.Project_Engines);
         OutputStreamWriter io = new OutputStreamWriter(new FileOutputStream("./web/package.json"), "UTF-8");
         json.PackageJsonFile(io, object);
+        VueTemplate template = new VueTemplate();
+        template.create_template("./src/web/src/components/Hello.vue");
     }
 
     public Package() {

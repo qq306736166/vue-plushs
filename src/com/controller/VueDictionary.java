@@ -14,7 +14,7 @@ public class VueDictionary extends StringUtils {
 
     @VueDictionarys(type = "type", value = "@String")
     public String string() {
-        return "";
+        return "string";
     }
 
     @VueDictionarys(type = "type", value = "@Number")
